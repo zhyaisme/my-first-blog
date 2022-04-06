@@ -9,5 +9,5 @@ def post_list(request):
     )
     print(posts)
     return render(
-        request, "blog/post_list.html", {"posts": posts, "number": len(posts)}
+        request, "blog/post_list.html", {"posts": posts, "number": len(posts), "constant":1}
     )
