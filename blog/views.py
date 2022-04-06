@@ -8,4 +8,6 @@ def post_list(request):
         "published_date"
     )
     print(posts)
-    return render(request, "blog/post_list.html", {"posts": posts})
+    return render(
+        request, "blog/post_list.html", {"posts": posts, "number": len(posts)}
+    )

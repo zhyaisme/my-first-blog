@@ -9,7 +9,7 @@
     <header>
         <h1><a href="/">Django Girls Blog</a></h1>
     </header>
-    <p>Hello world</p>
+    <p>Hello world {{ number }}</p>
     {% for post in posts %}
     <article>
         <time>published: {{ post.published_date }}</time>
